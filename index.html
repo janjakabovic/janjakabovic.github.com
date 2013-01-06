@@ -1,107 +1,90 @@
 <html>
-
-<meta charset='utf-8'>
-
-<head>
-
-<title>GCM WebDeveloper website</title>
-
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
-<link href='http://fonts.googleapis.com/css?family=Keania+One' rel='stylesheet' type='text/css'>
-
+  <meta charset='utf-8'> 
+  <head>
+    <title>GCM WebDeveloper website</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Keania+One' rel='stylesheet' type='text/css'>
 </head>
-
-<body>
-
-<style>
-
-body {
-
-background: #DDD6B2;
-
-}
-
-.container {
-
-background: #fff;
-
-padding: 50px;
-
-margin: 50px auto;
-
-width: 500px;
-
-font-family: sans-serif;
-
-border-radius: 4px;
-
-}
-
-p {
-
-font-family: 'Source Sans Pro';
-
-}
-
-h1 {
-
-font-family: 'Keania One', cursive;
-
-text-align: center;
-
-}
-
-img {
-
-width: 100%;
-
-}
-
-</style>
-
-<div class="container">
-
-<h1>GCM WebDeveloper</h1>
-
-<p>Ahoj!</p>
-
-<p>Aj keď tomu možno sám neveríš, dostal si sa na webovú stránku krúžku WebDeveloper, ktorý viac menej pravidelne funguje každú stredu na <a href="http://gcm.sk">GCM</a>.</p>
-
-<p>Táto stránka bude slúžiť ako šablóna pre všetky osobné stránky tých, čo na krúžok chodia (krúžkarov? -- tažká je táto slovenčina).</p>
-
-<b>Ako pokračovať:</b>
-
-<ol>
-
-<li><p>Predpokladajme, že už máte účet na GitHube. Ak nie, treba sa zaregistrovať <a href="https://github.com/signup/free">tu</a>.</li>
-
-<li><p>Prihlás sa na <a href="https://github.com">GitHube</a>.</li>
-
-<li><p>Choď na <a href="https://github.com/gcmwebdev/gcmwebdev.github.com">https://github.com/gcmwebdev/gcmwebdev.github.com</a> a klikni na <em>Fork</em>.</p></li>
-
-<li>
-
-<p>Aby ste mohli mať svoju vlastnú stránku v tvare dfg<b><em>mojemeno</em>.github.com</b> vo Vašom forku potrebujete zmeniť meno repozitára (áno, chápem, kopa cudzích slovíčok). <b>DON'T PANIC!</b> </p>
-
-<p>Nebojte sa, máme obrázky.
-
-<p><img src="http://i.imgur.com/ZHsmu.png" />
-
-<p>Tento riadok tu je len preto, aby ste nezabudli, že treba spraviť aj to, čo je na druhom obrázku. </p>
-
-<p><img src="http://i.imgur.com/tHak5.png" />
-
-</li>
-
-<li><p>Potom choďte na <a href="http://scratchpad.io/0Y8OHvH5PV">túto stránku</a> a upravte si ju tak, aby sa Vám páčila. Môžete si vyskúšať všetko, čo viete.</li>
-
-</ol>
-
-<em>Veľa šťastia!</em>
-
-</div>
-
-</body>
-
+  <body>
+    <style>
+      body {
+        background: #DDD6B2;
+        counter-reset:section;
+        
+      }
+      .container {
+        background: #fff;
+        padding: 50px;
+        margin: 50px auto;
+        width: 800px;
+        font-family: sans-serif;
+        border-radius: 4px;
+      }
+      p {
+        font-family: 'Source Sans Pro';  
+      }
+      h1 {
+         font-family: "tahoma", cursive;  
+         text-align: center;
+         counter-reset:subsection;
+         counter-increment:section;
+      }
+      img {
+        max-width:100%  
+      }
+      li{margin:15px 0;}
+      ol > li{list-style:none;}
+      .container > ol > li:before{counter-increment:subsection;counter-reset:subsubsection;
+content:counter(section) "." counter(subsection) " "}
+.container > ol > li > ol >li:before{counter-increment:subsubsection;
+content:counter(section) "." counter(subsection)"."counter(subsubsection) " "}
+    </style>
+    <div class="container">
+      <h1>Načo Github?</h1>
+      <ol>
+        <li>Aby sme si mali kde zverejniť vašu jednoduchú osobnú stránku v tvare www.vasemeno.github.com</li>
+        <li>Aby ste mohli zverejniť súbory (napríklad nejaký open source program)</li>
+        <li>Môžete si stiahnuť predchádzajúcu verziu súboru, ak ste ho aktualizovali</li>
+        
+      </ol>
+      <h1>Registrácia</h1>
+      <p>To vie asi každý :)</p>
+      <h1>Čo asi Repozitáre môžu byť??</h1>
+      <ol>
+        <li>Akoby priečinky, do ktorých si ukladáte súbory</li>
+        <li>Moje repozitáre - <img src="http://janjakabovic.github.com/myprofile.png" /></li>
+        <li>Ak chcete vytvoriť nový repozitár kliknite vpravo hore a dostanete sa sem:<img src="http://janjakabovic.github.com/newrepo.png" /></li>
+        <li>Repozitár, ktorý má meno menovashokonta.github.com je 
+         Vaša webova stranka( v mojom pripade http://www.janjakabovic.github.com)
+         <ul>
+          <li>tento repozirar obsahuje súbor index.html, v ktorom sa nachádza HTML kod</li> 
+         </ul></li>
+        <li>Ak chcete repozitár premenovať alebo vymazať ovorte si ho a kliknite na settings
+        <img src="http://i.imgur.com/ZHsmu.png"/>
+          <ol>
+            <li>Ak chcete repozitár vymazať nascrollujte dolu 
+              <img src="http://janjakabovic.github.com/delete.png" /><br />A potom do toho okienka, 
+              čo Vám vyskočí napíšete meno repozitára a kliknete na "understand...</li>
+            <li>Ak chcete repozitár premenovať <img src="http://janjakabovic.github.com/rename.png" /></li>
+          </ol>
+        </li>
+        
+      </ol>
+      <h1>Ako vytvoriť nový súbor a upraviť ho?</h1>
+      <ol>
+        <li>Ak chcete vytvoriť nový súbor tak kliknete sem:</li>
+      </ol>
+      <h1>Na čo to<img src="http://janjakabovic.github.com/forkicon.png" /> slúži?</h1>
+      <ol>
+        <li>Ak chcete cudzí repozitár pridať na vaše konto, tak si otvoríte cudzí a kliknete na "Fork"<img src="http://janjakabovic.github.com/fork.png" /></li>
+      </ol>
+      <h1>Ach ja som ten súbor omylom prepísal!</h1>
+      <ol><li>Nebojte sa, ak sa niečo takéto stane, kľudne si môžete sťiahnuť predchádzajúcu verziu súboru:
+        <img src="http://janjakabovic.github.com/buttonhistory.png" /><br /> Vypíše Vám všetky verzie súboru, pričom vy si vyberiete predchádzajúcu verziu o otvoríte siju:
+        <img src="http://janjakabovic.github.com/viewfile.png" /><br />
+      </li></ol>
+      <h1>Kto si môj repozitár "Forkol"?</h1>
+      <p>Ak chcete vedieť podrobnosti o repozitári kliknite na "network"<img src="http://janjakabovic.github.com/network.png" /></p>
+    </div>
+  </body>
 </html>
