@@ -1,0 +1,100 @@
+<html>
+  <meta charset='utf-8'> 
+  <head>
+    <title>GCM WebDeveloper website</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Keania+One' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+    <style>
+      body {
+        background: #DDD6B2;
+        counter-reset:section;
+        
+      }
+      .container {
+        background: #fff;
+        padding: 50px;
+        margin: 50px auto;
+        width: 800px;
+        font-family: sans-serif;
+        border-radius: 4px;
+      }
+      p {
+        font-family: 'Source Sans Pro';  
+      }
+      h1 {
+         font-family: "tahoma", cursive;  
+         text-align: center;
+         counter-reset:subsection;
+         counter-increment:section;
+      }
+      img {
+        max-width:100%;border:2px dotted  
+      }
+      li{margin:15px 0;}
+      ol > li{list-style:none;}
+      ol> li{text-indent:-28px}
+      ol >li>ol>li{text-indent:-39px}
+      .container > ol > li:before{counter-increment:subsection;counter-reset:subsubsection;
+content:counter(section) "." counter(subsection) " "}
+.container > ol > li > ol >li:before{counter-increment:subsubsection;
+content:counter(section) "." counter(subsection)"."counter(subsubsection) " "}
+nav li{display: inline-block; margin:0px}
+    nav li a{padding:6px 30px 10px ;display:inline-block;text-decoration:none;color:black;}
+    nav ul{mnargin:0;
+          padding:0 6px;
+          width:100%;
+          height:35px;
+          background-color:#DDD6B2;
+          border-radius:2px
+          
+    }
+    nav li:hover{background-color:rgba(255,255,255,0.5)}
+    </style>
+    <div class="container">
+    <nav>
+      <ul>
+      
+        <li><a href="/dabblet.html" style="background-color:rgba(255,255,255,0.5)">Dabblet návod</a></li><li>
+          <a href="/index.html" >Github návod</a>
+        </li>
+      </ul>
+      </nav>
+      <h1>Načo Dabblet.com?</h1>
+      <ol>
+        <li>Aby ste pri písaní HTML hneď mohli vidieť ako to bude vyzerať: Na jednej strane píšete a na druhej vidíte<img src="http://janjakabovic.github.com/review.png"</li>
+        <li>Aby ste si mohli svoje kódy uložiť</li>
+        <li>Môžete si prezerať html kódy druhých</li>
+      </ol>
+      <h1>Prihlásenie</h1>
+      <ol>
+        <li>Do dabblet.com sa vždy prihlasujete cez svoje konto v <a href="github.com">github.com</a>
+          <img src="http://janjakabovic.github.com/login.png" /><br />Pri prvom prihlasovaní sa Vám otvorí okienko, kde kliknete na "Allow", pokial nie ste prihlásený na Githube tak si najprv vypíta prihlasovacie údaje 
+        </li>
+       
+      </ol>
+      <h1>Otvorenie uloženého Projektu</h1>
+      <ol><li>Ak ste si uložili niečo rozpracované, nachádza sa to tuto:<img src="http://janjakabovic.github.com/project.png" />
+        a dostanete sa sem:  <img src="http://janjakabovic.github.com/projects.png" /></li>
+      </ol>
+      <h1>Uloženie Vášho projektu</h1>
+      <ol>
+        <li>Projekt, s ktorým aktuálne pracujete bude na tom počítači dostupný aj po zatvorení okna, 
+        ak ho však budete chcieť otvoriť doma na Vašom počítači tak si ho musíte uložiť:
+        <img src="http://janjakabovic.github.com/save.png" />Ak chcete súbor ukladať inak ako anonymously tak musíte byť prihlásený</li>
+        
+      </ol>
+      <h1>Ako dostanem html na moju stránku na Githube.com?</h1>
+      <ol>
+        <li>Ak chcete uložiť html na vašu osobnú stránku, tak musíte skopírovať html z dabbled.com a prepísať index.html vo Vašom repozitári</li>
+      </ol>
+      <h1>Ako zobrazím prácu iných?</h1>
+      <ol>
+        <li>Je možné zobraziť si profil človeka, kde nájdete jeho projekty, ale nie vždy to funguje: tvar URL: http://dabblet.com/user/menouzivatelanagithube => napr. <a target="_blank" href="http://dabblet.com/user/janjakabovic">http://dabblet.com/user/janjakabovic</a>, projekty na inšpiráciu <a target="_blank" href="http://dabblet.com/user/leaverou">http://dabblet.com/user/leaverou</a>  </li>
+        <li>Spolužiak Vám dá adresu URL Vášho projektu (musí to mať uložené) => napr: <a target="_blank" href="http://dabblet.com/gist/4463276">http://dabblet.com/gist/4463276</a></li>
+      </ol>
+      
+    </div>
+  </body>
+</html>
